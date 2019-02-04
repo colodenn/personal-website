@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76.526" height="63.336" viewBox="0 0 76.526 63.336">
+  <defs>
+    <filter id="ic_menu_24px" x="0" y="0" width="76.526" height="63.336" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#ic_menu_24px)">
+    <path id="ic_menu_24px-2" data-name="ic_menu_24px" d="M3,51.336H61.526V43.78H3Zm0-18.89H61.526V24.89H3ZM3,6v7.556H61.526V6Z" transform="translate(6)" fill="#fff"/>
+  </g>
+</svg>
