@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -10,8 +11,7 @@
     <!-- <script src="js/main.js"></script> -->
     <meta name="theme-color" content="#111111">
 
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEb7yAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAARAAAAAAACIAAAAAAAACIiAAAAAAACIiIgAAAAAAICICAAAAAAAAIgAAAAAAACIiIgAAAAACIhESIAAAAAIiESIgAAAAAiIiIiAAAAACACIAIAAAAAIgIiAgAAAAAiIiIiAAAAAAIiIiAAAAAAAAAAAAAAAAAAAAAAAADzzwAA8A8AAOAHAADgBwAA4AcAAOAHAADgBwAA4AcAAOAHAADgBwAA4AcAAOAHAADgBwAA8A8AAPgfAAD//wAA"
-        rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAIAAAADAAAAAwADAAQAAwAXFhUAAQABAAIAAQADAAEABAABAAIBAAAEAQMAAQACAAIAAgADAAIAAgEBAAMBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggBAAgICQcJCAgICgkIDAcGBwICAgIJCQgICAkIAw8HCAcDCAIIAQgICQIJAgIJCAIHCAIQAggCEAEICAIDAwEICAIBAAIJAgIDAwMICgkJAggJCAgICAkJAggQAwIJCAgCAgIJAgEIAgEBCQMICgEIAgICAggJBwECAg8IEAQCCAgHCQIIAgIIEAgDCAgJCAEBAAgCEQICAQECAgIJBwgBCAcBAQgCCAEABwECCQIIAggCCAgIAggCBwICCQcDAgMCCAIBAwICAQMJCQkJCgMHBwgCAgICAggLEAgIAggICA8IDQkODwgJAgkJDw8FCAgCEAgICAgIDggCCQ4PCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
@@ -21,11 +21,11 @@
     <nav id="overlay">
         <img class="hvr-skew-backward" src="assets/cross.svg" id="close-menu-btn">
         <ul>
-            <li><a class="hvr-float" href="#">home</a>
+            <li><a id="close-menu" class="hvr-float" href="#">home</a>
                 <span></span>
             </li>
-            <li><a class="hvr-float" href="#">about</a>
-                <span</span> </li> <li><a class="hvr-float" href="#">portfolio</a>
+            <li><a class="hvr-float" href="https://oc.codenn.de">cloud</a>
+                <span</span> </li> <li><a class="hvr-float" href="https://github.com/colodenn">portfolio</a>
                     <span></span>
             </li>
         </ul>
@@ -37,16 +37,14 @@
 
 
 
-<div id="page">
-   
-    <div class="pane"> 
+
     <div class="header">
 
         <p id="homepage-logo">codenn<span class="reddish">.</span></p>
 
         <img id="hamburger-menu" src="assets/hamburgermenu.svg">
     </div>
-
+<div id="content-text-logo">
     <div class="content-text">
         <div id="title-div">
             <!-- <p id="title"><span class="reddish">co</span>de is <span class="reddish">de</span>sig<span
@@ -57,80 +55,53 @@
         <div id="name-div">
             <!-- <p id="name"><span class="reddish">co</span>rnelius <span class="reddish">de</span><span class="blueish">nn</span>inger</p> -->
             <span id="typed4"></span>
+            </div>
         </div>
-    
-</div>
-<div class="pane">sadfasf</div>
-</div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-        <script>
-            var overlay = document.getElementById('overlay');
-            var closeMenu = document.getElementById('close-menu');
 
-            document.getElementById('hamburger-menu').addEventListener('click', function () {
-                overlay.classList.add('show-menu');
-            });
 
-            document.getElementById('close-menu-btn').addEventListener('click', function () {
-                overlay.classList.remove('show-menu');
-            });
 
-            var typed3 = new Typed('#typed3', {
-                strings: ['<span class="reddish">de</span>sig<span class="blueish">n</span>.',
-                    '<span class="reddish">lo</span>ve<span>.</span>',
-                    '<span class="reddish">li</span>fe<span class="blueish"></span>.',
-                    '<span class="reddish">de</span>sig<span class="blueish">n</span>.'
-                ],
-                typeSpeed: 120,
-                backSpeed: 100,
-                smartBackspace: true, // this is a default
-                loop: false
-            });
-            var typed4 = new Typed('#typed4', {
-                strings: [
-                    '<span class="reddish">co</span>rnelius <span class="reddish">de</span><span class="blueish">nfgn</span>jgfgr',
-                    '<span class="reddish">co</span>rnelius <span class="reddish">de</span><span class="blueish">nn</span>inger'
-                ],
-                typeSpeed: 80,
-                backSpeed: 90,
-                smartBackspace: true, // this is a default
-                loop: false
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
 
-            });
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            overlay.classList.add('show-menu');
+        });
 
-            var page = document.getElementById('page');
-            var last_pane = page.getElementsByClassName('pane');
-            last_pane = last_pane[last_pane.length - 1];
-            var dummy_x = null;
+        document.getElementById('close-menu-btn').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+        document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
 
-            window.onscroll = function () {
-                // Horizontal Scroll.
-                var y = document.body.getBoundingClientRect().top;
-                page.scrollLeft = -y;
-
-                // Looping Scroll.
-                var diff = window.scrollY - dummy_x;
-                if (diff > 0) {
-                    // window.scrollTo(0, diff);
-                } else if (window.scrollY == 0) {
-                    // window.scrollTo(0, dummy_x);
-                }
-            }
-            // Adjust the body height if the window resizes.
-            window.onresize = resize;
-            // Initial resize.
-            resize();
-
-            // Reset window-based vars
-            function resize() {
-                var w = page.scrollWidth - window.innerWidth + window.innerHeight;
-                document.body.style.height = w + 'px';
-
-                dummy_x = last_pane.getBoundingClientRect().left + window.scrollY;
-            }
-        </script>
+        var typed3 = new Typed('#typed3', {
+            strings: ['<span class="reddish">de</span>sig<span class="blueish">n</span>.',
+                '<span class="reddish">lo</span>ve<span>.</span>',
+                '<span class="reddish">li</span>fe<span class="blueish"></span>.',
+                '<span class="reddish">de</span>sig<span class="blueish">n</span>.'
+            ],
+            typeSpeed: 120,
+            backSpeed: 100,
+            smartBackspace: true, // this is a default
+            loop: false
+        });
+        var typed4 = new Typed('#typed4', {
+            strings: [
+                '<span class="reddish">co</span>rnelius <span class="reddish">de</span><span class="blueish">nfgn</span>jgfgr',
+                '<span class="reddish">co</span>rnelius <span class="reddish">de</span><span class="blueish">nn</span>inger'
+            ],
+            typeSpeed: 80,
+            backSpeed: 90,
+            smartBackspace: true, // this is a default
+            loop: false
+            
+        });
+    </script>
 
 </body>
 
