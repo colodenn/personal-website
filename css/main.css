@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -240,6 +242,23 @@ ul li a {
     margin-left: 15px;
   }
 
+  .text-hover {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:  #E85656;
+    position: relative;
+    text-align: center;
+    margin-top: -25px;
+    opacity: 0;
+}
+
+.hvr-float:hover + .text-hover {
+    opacity: 1;
+    animation: show-x 0.5s ease-in forwards;
+}
+
 
   @media only screen and (max-width: 600px) {
     #title {
@@ -324,4 +343,9 @@ ul li  {
     animation: show-x 1s ease-in forwards;
     
 }
+
+
+
+
+
 }
