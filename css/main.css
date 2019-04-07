@@ -269,6 +269,17 @@ ul li a {
         text-shadow: 2px 2px 2px 2px black;
        
     }
+
+    #hamburger-menu {
+        position: absolute;
+        right: 0%;
+        
+        height: auto;
+        margin-right: 5%;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
     #typed3 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
