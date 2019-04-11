@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+ html, body {margin: 0; height: 100%; overflow-y: hidden;} 
+  ::-webkit-scrollbar {
+    width: 0px; }
+ .element::-webkit-scrollbar { width: 0 !important } 
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #7289DA;
+    box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.699);
+}
+
+.main {
+    display: flexbox;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    background-color: #2C2F33;
+    overflow: scroll;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+
+.card {
+    top: 15%;
+    margin-left: 100px;
+    background-color: #7289DA;
+    width: 270px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.123);
+}
+
+.cardtext {
+    position: absolute;
+    bottom: 0%;
+    width: 270px;
+    height: 150px;
+    background-color: #7289DA;
+    
+}
+
+.img {
+    height: 350px;
+    width: auto;
+    left: -50%;
+    position: absolute;
+}
+
+.text {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: white;
+    font-size: 50px;
+
+}
