@@ -25,25 +25,31 @@ const Layout = ({ children }) => {
 
   return (
     <>
+<div className="p-14 overflow-hidden h-screen w-screen ">
+
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+        <main className="my-auto">{children}</main>
+        <div className="fixed bottom-0 left-0 right-0 ">
+          <div className="relative flex justify-between px-14 py-4">
+
+
+          <div>
+            <h5 className="font-gilroy leading-tight text-sm">
+coding.
+            </h5>
+          </div>
+          <div>
+            <h5 className="font-gilroy leading-tight text-sm">
+
+designing.
+            </h5>
+          </div>
+          </div>
+
+        
+        </div>
+</div>
+     
     </>
   )
 }

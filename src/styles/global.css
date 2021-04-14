@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    cursor:none;
+}
+
+.cursor {
+        width: 70px;
+        height: 70px;
+        border: 2px solid #f2da87;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+    z-index: 10000;
+
+}
+
+.cursor-dot {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f2da87;
+    border-radius: 50%;
+    background-color:  #f2da87;
+    position: absolute;
+    transform: translate(-50%,-50%);    
+    z-index: 10000;
+}
+
+.font-gilroy {
+    font-family: Gilroy;
+    font-weight: 600;
+    color: #161f38;
+}
+.font-gilroy-no {
+    font-family: Gilroy;
+    font-weight: 400;
+    color: #8a8f9b;
+    letter-spacing: 0.5px;
+}
+
+.font-gilroy-400 {
+    font-family: Gilroy;
+    font-weight: 500;
+    color: #161f38;
+
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+*{
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .vertical {
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: sideways;
+    text-orientation: sideways;
+    transform:rotate(180deg);
+
+  }
+
+  .minus14{
+      margin-top: -112px;
+      
+  }
+
+  
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-UltraLight.ttf);
+    font-weight: 100;
+  }
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-Thin.ttf);
+    font-weight: 200;
+  }
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-Light.ttf);
+    font-weight: 300;
+  }
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-Regular.ttf);
+    font-weight: 400;
+  }
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-Medium.ttf);
+    font-weight: 500;
+  }
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+  }
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-Bold.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: Gilroy;
+    src: url(../styles/Gilroy/Gilroy-ExtraBold.ttf);
+    font-weight: 800;
+  }
+
+
