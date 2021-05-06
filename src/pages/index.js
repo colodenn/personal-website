@@ -12,7 +12,7 @@ const IndexPage = () => (
     <div className="flex">
 
     <div className="my-auto absolute top-1/2 transform -translate-y-1/2 w-1/3 justify-end flex  ">
-      <p className="font-gilroy-400 text-lg leading-6 mr-12 animate__animated animate__fadeInUp animate__delay-0.5s ">
+      <p className="fronttext font-gilroy-400 text-lg leading-6 mr-12 animate__animated animate__fadeInUp animate__delay-0.5s ">
         I'm Cornelius Denninger,<br/>
         I like code and design.<br/>
         See you!

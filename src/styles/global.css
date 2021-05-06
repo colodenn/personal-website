@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (max-width: 600px) {
+  .fronttext{
+    display: none;
+  }
+  .cursor {
+    display: none;
+  }
+
+  .cursor-dot {
+    display:none;
+  }
+
+}
 html {
   cursor: none;
 
@@ -29,6 +42,7 @@ a {
 
 .textp {
   pointer-events: none;
+  
 }
 
 h5 {
