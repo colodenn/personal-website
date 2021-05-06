@@ -33,8 +33,8 @@ const IndexPage = () => (
                 </a>
               </li>
               <li className="mr-4 ml-4 mt-4 mb-4">
-                <a className="hover:color-purple-600" href="https://www.linkedin.com/in/cornelius-denninger-98454b169/">
-                linkedin
+                <a className="hover:color-purple-600" href="discord://">
+                discord
 
                 </a>
               </li>
