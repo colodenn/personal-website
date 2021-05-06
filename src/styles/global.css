@@ -3,49 +3,128 @@
 @tailwind utilities;
 
 html {
-    cursor:none;
+  cursor: none;
+
+    -webkit-font-smoothing: antialiased!important;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  -webkit-font-smoothing: antialiased!important;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+p {
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  cursor: none;
+}
+
+.textp {
+  pointer-events: none;
+}
+
+h5 {
+  pointer-events: none;
+
+}
+
+.text {
+
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
+  transform: translate(-50%,-25%);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  width: 300px;
+  pointer-events: none;
+
+}
+
+.text--hi-hovered{
+  opacity: 1;
+  pointer-events: none;
+
 }
 
 .cursor {
+  pointer-events: none;
+
         width: 70px;
         height: 70px;
         border: 2px solid #f2da87;
         border-radius: 50%;
-        position: absolute;
+        position: fixed;
         transform: translate(-50%,-50%);
         transition-duration: 200ms;
         transition-timing-function: ease-out;
-    z-index: 10000;
+        z-index: 9999;
+
+
+}
+.cursor--link-hovered {
+  border: 2px solid #bfdaef;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+
+  
 
 }
 
+.cursor--clicked {
+  width: 80px;
+    height: 80px;
+}
+
 .cursor-dot {
+  z-index: 10222000000000;
+  pointer-events: none;
+
+
     width: 15px;
     height: 15px;
     border: 2px solid #f2da87;
     border-radius: 50%;
     background-color:  #f2da87;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%,-50%);    
     z-index: 10000;
 }
+.cursor-dot--link-hovered  {
+  border: 2px solid #bfdaef;
+  background-color:  #bfdaef;
+  pointer-events: none;
+
+}
 
 .font-gilroy {
-    font-family: Gilroy;
-    font-weight: 600;
+    font-family: Mulish;
+    font-weight: 700;
     color: #161f38;
 }
 .font-gilroy-no {
-    font-family: Gilroy;
-    font-weight: 400;
+    font-family: Mulish;
     color: #8a8f9b;
     letter-spacing: 0.5px;
+    font-size: 0.825rem;
 }
 
 .font-gilroy-400 {
-    font-family: Gilroy;
+    font-family: Mulish;
     font-weight: 500;
     color: #161f38;
+    font-size: 1.1rem;
+    line-height: 1.66667;
+   
 
 }
 
@@ -74,56 +153,80 @@ li {
       
   }
 
-  
-
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-UltraLight.ttf);
-    font-weight: 100;
+  .hi {
+    
+    z-index: 10000000;
   }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-Thin.ttf);
+  .hand {
+    opacity: 0;
+    z-index: 1000000000;
+  }
+
+  .hand--hand-hovered {
+    opacity: 100;
+  }
+  .cursor--cursor-dot-hovered {
+    background-color: transparent;
+    border: none;
+  }
+
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 1s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    height: 500%;
+    width: 500%;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 5.0deg) }
+     20% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-8.0deg) }
+     60% { transform: rotate(14.0deg) }
+     80% { transform: rotate(-8.0deg) }
+     100% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  }
+
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-ExtraLight.ttf);
     font-weight: 200;
   }
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-Light.ttf);
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-Light.ttf);
     font-weight: 300;
   }
-
-
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-Regular.ttf);
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-Regular.ttf);
     font-weight: 400;
   }
-
-
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-Medium.ttf);
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-Medium.ttf);
     font-weight: 500;
   }
-
-
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-SemiBold.ttf);
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-SemiBold.ttf);
     font-weight: 600;
   }
-
-
-@font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-Bold.ttf);
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-Bold.ttf);
     font-weight: 700;
   }
   @font-face {
-    font-family: Gilroy;
-    src: url(../styles/Gilroy/Gilroy-ExtraBold.ttf);
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-ExtraBold.ttf);
     font-weight: 800;
   }
-
-
+  @font-face {
+    font-family: Mulish;
+    src: url(../styles/Mulish/Mulish-Black.ttf);
+    font-weight: 900;
+  }

@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import 'animate.css'
 import Header from "./header"
 import "./layout.css"
 
@@ -34,12 +34,12 @@ const Layout = ({ children }) => {
 
 
           <div>
-            <h5 className="font-gilroy leading-tight text-sm">
+            <h5 className="font-gilroy leading-tight text-sm animate__animated animate__fadeInUp animate__delay-0.5s ">
 coding.
             </h5>
           </div>
           <div>
-            <h5 className="font-gilroy leading-tight text-sm">
+            <h5 className="font-gilroy leading-tight text-sm animate__animated animate__fadeInUp animate__delay-0.5s ">
 
 designing.
             </h5>
