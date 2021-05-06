@@ -107,7 +107,9 @@ const Cursor = () => {
       )
 
     return (
-        <>
+        <><div className="mobile">
+
+        
         <div style={{'zIndex': '10000000000000000'}} className="text " className={textClasses} style={{ left: `${position.x}px`, top: `${position.y}px`}}>
 
           <p className="textp font-gilroy ">
@@ -121,7 +123,8 @@ const Cursor = () => {
                 <div className="hand " style={{'zIndex': '10000000000000000'}} className={cursorHandClasses} >
                   <img className="wave " style={{'zIndex': '10000000000000000', 'width': '300%', 'height': '300%'}} src="https://cdn.shopify.com/s/files/1/1061/1924/products/Waving_Hand_Sign_Emoji_Icon_ios10_large.png?v=1571606113" />
                 </div>
-          
+             
+            </div>
             </div>
         </>
     )
