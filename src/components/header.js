@@ -11,9 +11,9 @@ const Header = ({ siteTitle }) => (
       </h5>
     </div>
     <div className="hi pl-8">
-      <h5 className="font-gilroy leading-tight text-sm animate__animated animate__fadeInUp animate__delay-0.5s ">
+      <a href="mailto:cornelius.denninger@gmail.com?subject=Say Hi!&" className="font-gilroy leading-tight text-sm animate__animated animate__fadeInUp animate__delay-0.5s ">
       say hi.
-      </h5>
+      </a>
     </div>
   </header>
 )
