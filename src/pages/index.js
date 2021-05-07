@@ -4,8 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Cursor from "../components/Cursor"
 import 'animate.css'
+import useSound from 'use-sound';
+import sound from '../sound/mixkit-funny-cartoon-fast-splat-2889.wav'
 
-const IndexPage = () => (
+const IndexPage = () => {
+const [play] = useSound(sound);
+
+return (
   <Layout>
    <Cursor />
     <SEO title="Home" />
@@ -19,7 +24,7 @@ const IndexPage = () => (
       </p>
     </div>
       <div className="absolute left-1/2 transform top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <img className=" origin-center" src="https://assets.website-files.com/5c8b2e2664f8768dfb1ef7ff/5c8b30892c93fb16a25cd4dd_space-butt.gif" />
+        <img onClick={play} className=" origin-center transform scale-100 hover:scale-110" src="https://assets.website-files.com/5c8b2e2664f8768dfb1ef7ff/5c8b30892c93fb16a25cd4dd_space-butt.gif" />
       </div>
     </div>
 
@@ -53,7 +58,7 @@ const IndexPage = () => (
 
   </Layout>
 )
-
+}
 
 
 
