@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <footer className='flex justify-center mb-8 mt-20'>
-        <div>
+      <footer className='flex justify-center mb-8 mt-20 mx-auto lg:container lg:mt-24 xl:px-64'>
+        <div className='mx-auto text-center'>
           <ul className='flex justify-center'>
             <li className='mb-2 mr-4 underline'>Impressum</li>
             <li className='underline'>Cookies</li>
