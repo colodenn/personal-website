@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 
 import Footer from '@/components/layout/Footer';
@@ -59,7 +61,7 @@ export default function HomePage() {
       )}
       <nav className='flex font-extrabold font-secondary items-center justify-between mb-20 px-8 py-6 text-2xl'>
         <div>codenn.</div>
-        <div onClick={(e) => setOpened(true)}>
+        <div onClick={() => setOpened(true)}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             className='h-6 w-6'
@@ -78,7 +80,7 @@ export default function HomePage() {
       </nav>
       <main className='container px-8'>
         <h1 className='fade-in font-bold font-secondary slide-in-bottom text-5xl'>
-          Hello I'm{' '}
+          Hello I&apos;m{' '}
           <span className='maske'>
             <span className='font-bold trans'>Cornelius Denninger </span>{' '}
           </span>{' '}
@@ -162,7 +164,7 @@ export default function HomePage() {
         </h3>
         <p className='font-normal font-secondary mb-4 text-xl'>
           Take a glimpse of my portfolio to get inspired for your next idea.
-          You’ll find more design projects on GitHub.
+          You&apos;ll find more design projects on GitHub.
         </p>
         <div className='flex items-center'>
           <div className='mr-2'>
