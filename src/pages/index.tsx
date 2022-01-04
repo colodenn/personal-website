@@ -12,50 +12,54 @@ export default function HomePage() {
   return (
     <>
       {opened && (
-        <div className={`bg-white fixed h-screen opacity-100 w-screen z-10 `}>
-          <div className='fixed items-center justify-end px-8 py-6 right-0 transform z-50'>
-            <div
-              onClick={() => setOpened(false)}
-              className='fade-in slide-in-bottom'
-            >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='h-6 w-6'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
+        <div className={`bg-white fixed h-screen opacity-100 w-full z-10 `}>
+          <div className='container h-full items-center mx-auto my-auto px-0 relative md:px-48'>
+            <div className='fixed items-center justify-end px-8 py-6 right-4 transform z-50 md:right-1/4'>
+              <div
+                onClick={() => setOpened(false)}
+                className='fade-in slide-in-bottom'
               >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth={2}
-                  d='M6 18L18 6M6 6l12 12'
-                />
-              </svg>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='h-6 w-6'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M6 18L18 6M6 6l12 12'
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-col h-full justify-center px-12 w-full'>
-            <ul className='font-bold mb-16 text-4xl z-50'>
-              <li className='cursor-pointer fade-in mb-6 slide-in-bottom hover:text-gray-600'>
-                About
-              </li>
-              <li className='cursor-pointer fade-in mb-6 slide-in-bottom hover:text-gray-600'>
-                Work
-              </li>
-              <li className='cursor-pointer fade-in slide-in-bottom hover:text-gray-600'>
-                Services
-              </li>
-            </ul>
-            <ul className='font-bold text-lg z-50'>
-              <li className='cursor-pointer fade-in mb-4 slide-in-bottom'>
-                Contact Me
-              </li>
-              <li className='cursor-pointer fade-in slide-in-bottom'>Blog</li>
-            </ul>
-          </div>
-          <div className='absolute h-full left-0 top-0 w-full z-40'>
-            <div className='kaXiLa yellowbubble z-30'></div>
-            <div className='LKiby bluebubble z-30'></div>
+            <div className='flex flex-col h-full justify-center my-auto px-12 w-full lg: lg:flex-row lg:items-center'>
+              <ul className='font-bold mb-16 text-4xl z-50 md:mb-0 md:mr-48 md:text-6xl'>
+                <li className='cursor-pointer fade-in mb-6 slide-in-bottom hover:text-gray-600'>
+                  About
+                </li>
+                <li className='cursor-pointer fade-in mb-6 slide-in-bottom hover:text-gray-600'>
+                  Work
+                </li>
+                <li className='cursor-pointer fade-in slide-in-bottom hover:text-gray-600'>
+                  Services
+                </li>
+              </ul>
+              <ul className='font-bold items-center text-lg z-50 md:text-2xl'>
+                <li className='cursor-pointer fade-in mb-4 slide-in-bottom hover:text-gray-600'>
+                  Contact Me
+                </li>
+                <li className='cursor-pointer fade-in slide-in-bottom hover:text-gray-600'>
+                  Blog
+                </li>
+              </ul>
+            </div>
+            <div className='absolute h-full left-0 top-0 w-full z-40'>
+              <div className='kaXiLa yellowbubble z-30'></div>
+              <div className='LKiby bluebubble z-30'></div>
+            </div>
           </div>
         </div>
       )}
