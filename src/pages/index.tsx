@@ -81,7 +81,7 @@ export default function HomePage() {
         </nav>
         <main className='mt-0 px-8 lg:mt-24 xl:px-64'>
           <h1 className='fade-in font-bold font-secondary slide-in-bottom text-5xl lg:text-7xl'>
-            Hello I&apos;m{' '}
+            Hello, I&apos;m{' '}
             <span className='maske'>
               <span className='font-bold trans'>Cornelius Denninger </span>{' '}
             </span>{' '}
@@ -123,8 +123,8 @@ export default function HomePage() {
           </div>
         </main>
         <section className='mt-14 px-8 lg:mt-24 xl:px-64'>
-          <div className=''>
-            <div>
+          <div className='block md:flex'>
+            <div className='md:mr-36'>
               <div className='mb-2'>
                 <svg width='40' height='40' viewBox='0 0 56 56' fill='none'>
                   <path
@@ -155,6 +155,38 @@ export default function HomePage() {
                 <li className='mb-2 text-lg'>MySQL/MongoDB</li>
                 <li className='mb-2 text-lg'>Supabase</li>
                 <li className='mb-2 text-lg'>PyTorch</li>
+              </ul>
+            </div>
+            <div className='mt-12 md:mt-0'>
+              <div className='mb-2'>
+                <svg width='40' height='40' viewBox='0 0 56 56' fill='none'>
+                  <path
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                    d='M24.3675 4.5C23.5016 4.49993 22.6577 4.76204 21.9493 5.24918C21.502 5.55675 21.1224 5.94451 20.8283 6.38863C20.6095 6.71887 20.5 7.21715 20.5 7.9632V11.5C20.5 12.3284 19.8284 13 19 13C18.1716 13 17.5 12.3284 17.5 11.5V7.9632C17.5 7.02663 17.6167 5.80456 18.3272 4.73198C18.8334 3.9677 19.4848 3.30299 20.2495 2.77719C21.4599 1.94487 22.8969 1.4999 24.3676 1.5C24.3677 1.5 24.3676 1.5 24.3676 1.5H47.2735C49.1851 1.5 51.0214 2.25127 52.3778 3.59351C53.7348 4.93628 54.5 6.76083 54.5 8.66667V31.3333C54.5 33.2392 53.7348 35.0637 52.3778 36.4065C51.0214 37.7487 49.1851 38.5 47.2735 38.5H43.547C42.7186 38.5 42.047 37.8284 42.047 37C42.047 36.1716 42.7186 35.5 43.547 35.5H47.2735C48.3995 35.5 49.4762 35.0572 50.2677 34.2741C51.0586 33.4914 51.5 32.4333 51.5 31.3333V8.66667C51.5 7.56671 51.0586 6.50859 50.2677 5.72594C49.4762 4.94277 48.3995 4.5 47.2735 4.5H24.3675Z'
+                    fill='black'
+                  ></path>
+                  <path
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                    d='M20 20.5C16.9344 20.5 13.9376 21.4091 11.3887 23.1122C8.83971 24.8154 6.85303 27.2361 5.67987 30.0684C4.50672 32.9007 4.19977 36.0172 4.79784 39.0239C5.39591 42.0306 6.87214 44.7924 9.03985 46.9601C11.2076 49.1279 13.9694 50.6041 16.9761 51.2022C19.9828 51.8002 23.0993 51.4933 25.9316 50.3201C28.7639 49.147 31.1846 47.1603 32.8878 44.6113C34.5909 42.0624 35.5 39.0656 35.5 36C35.5 35.1716 36.1716 34.5 37 34.5C37.8284 34.5 38.5 35.1716 38.5 36C38.5 39.6589 37.415 43.2357 35.3822 46.278C33.3494 49.3204 30.4601 51.6915 27.0796 53.0918C23.6992 54.492 19.9795 54.8583 16.3908 54.1445C12.8022 53.4307 9.5058 51.6687 6.91853 49.0815C4.33126 46.4942 2.56931 43.1978 1.85548 39.6092C1.14165 36.0205 1.50802 32.3008 2.90824 28.9204C4.30846 25.5399 6.67965 22.6506 9.72196 20.6178C12.7643 18.585 16.3411 17.5 20 17.5C20.8284 17.5 21.5 18.1716 21.5 19C21.5 19.8284 20.8284 20.5 20 20.5Z'
+                    fill='black'
+                  ></path>
+                  <path
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                    d='M28.7477 21.1743C29.2037 20.4826 30.134 20.2916 30.8257 20.7476C32.9929 22.1764 34.8407 24.0233 36.2541 26.1769C36.7086 26.8695 36.5157 27.7994 35.8231 28.254C35.1305 28.7085 34.2005 28.5155 33.746 27.8229C32.5591 26.0145 31.0041 24.4585 29.1744 23.2523C28.4828 22.7963 28.2917 21.8659 28.7477 21.1743Z'
+                    fill='black'
+                  ></path>
+                </svg>
+              </div>
+              <h3 className='font-extrabold mb-2 mt-2 text-2xl'>Design</h3>
+              <ul className='mt-2'>
+                <li className='mb-2 text-lg'>Figma</li>
+                <li className='mb-2 text-lg'>Prototyping</li>
+                <li className='mb-2 text-lg'>Multi-platform prototyping</li>
+                <li className='mb-2 text-lg'>Tailwindcss</li>
+                <li className='mb-2 text-lg'>Sass</li>
               </ul>
             </div>
           </div>
