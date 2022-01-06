@@ -8,11 +8,11 @@ export default function Footer() {
           <div className=''>
             <ul className='flex justify-center md:justify-start'>
               <li className='mr-4 mb-2 underline hover:text-gray-500'>
-                <Link href={'#'}>Impressum</Link>
+                <Link href={'/impressum'}>Impressum</Link>
               </li>
-              <li className='underline hover:text-gray-500'>
+              {/* <li className='underline hover:text-gray-500'>
                 <Link href={'#'}>Cookies</Link>
-              </li>
+              </li> */}
             </ul>
             <div className='text- mb-4'>Made with 💝 in Saarland</div>
           </div>

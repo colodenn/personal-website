@@ -16,8 +16,9 @@ export default function HomePage() {
   return (
     <>
       <Seo templateTitle='Homepage' />
-      <div className='fixed left-0 top-6 z-50 px-0 mx-auto w-full md:px-4 xl:px-48'>
-        <nav className='container font-secondary flex justify-between items-center px-8 py-6 mx-auto mb-20 text-2xl font-extrabold'>
+
+      <div className='fixed top-0 left-0 z-50 px-0 mx-auto w-full md:px-4 xl:px-48'>
+        <nav className='container font-secondary flex z-50 justify-between items-center px-8 py-6 mx-auto text-2xl font-extrabold'>
           <div>
             <Link href='/'>codenn.</Link>
           </div>
@@ -56,7 +57,7 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
-            <div className='absolute top-0 left-0 z-40 w-full h-full'>
+            <div className='absolute top-0 left-0 z-30 w-full h-full'>
               <div className='kaXiLa yellowbubble z-30'></div>
               <div className='LKiby bluebubble z-30'></div>
             </div>
