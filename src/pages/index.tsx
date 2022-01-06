@@ -227,15 +227,17 @@ export default function HomePage() {
               <div>
                 <div className='flex mb-12'>
                   <ScrollAnimation animateIn='fade-in slide-in-bottom'>
-                    <div
-                      className='p-6 mr-12 rounded-lg shadow-2xl'
-                      style={{ backgroundColor: '#D6E9FF' }}
-                    >
-                      <img
-                        className='rounded-lg'
-                        src='https://www.ertappen.com/_next/image?url=%2Fimages%2Fdashboard.png&w=1920&q=75'
-                      />
-                    </div>
+                    <Link passHref={true} href='https://www.ertappen.com/'>
+                      <div
+                        className='p-6 mr-12 rounded-lg shadow-2xl cursor-pointer'
+                        style={{ backgroundColor: '#D6E9FF' }}
+                      >
+                        <img
+                          className='rounded-lg'
+                          src='https://www.ertappen.com/_next/image?url=%2Fimages%2Fdashboard.png&w=1920&q=75'
+                        />
+                      </div>
+                    </Link>
                   </ScrollAnimation>
                 </div>
                 <div className=''>
@@ -244,7 +246,7 @@ export default function HomePage() {
                       className='mr-4 w-8'
                       src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/detective_1f575-fe0f.png'
                     />
-                    Ertappen.
+                    <Link href='https://www.ertappen.com/'>Ertappen.</Link>
                   </h5>
                   <p className='mt-4 text-2xl'>
                     We provide your images with a unique watermark that is
@@ -262,11 +264,11 @@ export default function HomePage() {
                   <ScrollAnimation animateIn='fade-in slide-in-bottom'>
                     <div
                       className='p-6 mr-12 rounded-lg shadow-2xl'
-                      style={{ backgroundColor: '#FFEEA8' }}
+                      style={{ backgroundColor: '#e2d6ff' }}
                     >
                       <img
                         className='mx-auto rounded-lg'
-                        src='https://i.imgur.com/WRdlLSi.png'
+                        src='https://i.imgur.com/Srh4aIQ.png'
                       />
                     </div>
                   </ScrollAnimation>
@@ -275,9 +277,47 @@ export default function HomePage() {
                   <h5 className='flex items-center text-2xl font-bold'>
                     <img
                       className='mr-4 w-8'
+                      src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/bug_1f41b.png'
+                    />
+                    Caterpillar - Process Eventlog data
+                  </h5>
+                  <p className='mt-4 text-lg md:text-2xl'>
+                    Caterpillar is a web plattform to perform various process
+                    mining actions on your eventlog data.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className='px-8 mx-auto mt-12 md:px-12 lg:px-28 lg:mt-24 2xl:px-64'>
+              <div>
+                <div className='flex mb-12'>
+                  <ScrollAnimation animateIn='fade-in slide-in-bottom'>
+                    <Link
+                      passHref={true}
+                      href='https://chrome.google.com/webstore/detail/discord-link-sender/eomemhkkpegienlgknkpfimmombfjooc?hl=de'
+                    >
+                      <div
+                        className='p-6 mr-12 rounded-lg shadow-2xl cursor-pointer'
+                        style={{ backgroundColor: '#FFEEA8' }}
+                      >
+                        <img
+                          className='mx-auto rounded-lg'
+                          src='https://i.imgur.com/WRdlLSi.png'
+                        />
+                      </div>
+                    </Link>
+                  </ScrollAnimation>
+                </div>
+                <div className=''>
+                  <h5 className='flex items-center text-2xl font-bold'>
+                    <img
+                      className='mr-4 w-8'
                       src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/ship_1f6a2.png'
                     />
-                    Discord Link Sender
+                    <Link href='https://chrome.google.com/webstore/detail/discord-link-sender/eomemhkkpegienlgknkpfimmombfjooc?hl=de'>
+                      Discord Link Sender
+                    </Link>
                   </h5>
                   <p className='mt-4 text-lg md:text-2xl'>
                     The Discord Link Sender extension is a helpful addon that
@@ -292,15 +332,20 @@ export default function HomePage() {
               <div>
                 <div className='flex mb-12'>
                   <ScrollAnimation animateIn='fade-in slide-in-bottom'>
-                    <div
-                      className='p-6 mr-12 w-2/3 rounded-lg shadow-2xl'
-                      style={{ backgroundColor: '#CDF9EC' }}
+                    <Link
+                      passHref={true}
+                      href='https://www.npmjs.com/package/@taschendieb/autodeploy'
                     >
-                      <img
-                        className='mx-auto rounded-lg'
-                        src='https://i.pinimg.com/originals/92/96/f7/9296f70fce1ae3f298e0d085c17f6a3f.gif'
-                      />
-                    </div>
+                      <div
+                        className='p-6 mr-12 w-2/3 rounded-lg shadow-2xl cursor-pointer'
+                        style={{ backgroundColor: '#CDF9EC' }}
+                      >
+                        <img
+                          className='mx-auto rounded-lg'
+                          src='https://i.pinimg.com/originals/92/96/f7/9296f70fce1ae3f298e0d085c17f6a3f.gif'
+                        />
+                      </div>
+                    </Link>
                   </ScrollAnimation>
                 </div>
                 <div className=''>
@@ -309,7 +354,9 @@ export default function HomePage() {
                       className='mr-4 w-8'
                       src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/rocket_1f680.png'
                     />
-                    Autodeploy
+                    <Link href='https://www.npmjs.com/package/@taschendieb/autodeploy'>
+                      Autodeploy
+                    </Link>
                   </h5>
                   <p className='mt-4 text-lg md:text-2xl'>
                     Autodeploy is a small and highly customizable CLI-Tool to
