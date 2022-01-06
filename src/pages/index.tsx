@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className='example'>
       <Seo templateTitle='Homepage' />
 
-      <div className='fixed top-0 left-0 z-50 px-0 mx-auto w-full md:px-4 xl:px-48'>
+      <div className='fixed top-0 left-0 z-50 px-0 mx-auto w-full md:px-4 xl:px-0 2xl:px-48'>
         <nav className='container font-secondary flex z-50 justify-between items-center px-8 py-6 mx-auto text-2xl font-extrabold'>
           <div>
             <Link href='/'>codenn.</Link>
