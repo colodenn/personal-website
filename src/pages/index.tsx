@@ -6,6 +6,7 @@ import * as React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Footer from '@/components/layout/Footer';
+import Seo from '@/components/Seo';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
@@ -14,9 +15,12 @@ export default function HomePage() {
   const [opened, setOpened] = React.useState(false);
   return (
     <>
+      <Seo templateTitle='Homepage' />
       <div className='fixed left-0 top-6 z-50 px-0 mx-auto w-full md:px-4 xl:px-48'>
         <nav className='container font-secondary flex justify-between items-center px-8 py-6 mx-auto mb-20 text-2xl font-extrabold'>
-          <div>codenn.</div>
+          <div>
+            <Link href='/'>codenn.</Link>
+          </div>
 
           <Hamburger
             toggled={opened}
@@ -242,9 +246,10 @@ export default function HomePage() {
                     Ertappen.
                   </h5>
                   <p className='mt-4 text-2xl'>
-                    We tag your images with a unique watermark that is invisible
-                    to the naked eye. Want to find the monger of your images?
-                    Mark them with our tool and find out who is spreading them.
+                    We provide your images with a unique watermark that is
+                    invisible to the naked eye. Want to track down the
+                    counterfeiter of your images? Mark them with our tool and
+                    find out who is distributing them.
                   </p>
                 </div>
               </div>
