@@ -1084,7 +1084,14 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react@^17.0.38":
+"@types/react-animate-on-scroll@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-animate-on-scroll/-/react-animate-on-scroll-2.1.5.tgz#abd724800be21b2497e51356826cf7635233e99b"
+  integrity sha512-lGn+FcO9aYAdFND3R7yINwjh9IhCATpVeuI4dXZQMin42l+c83UldoQiflXgojrQJVVbNcMXWJt1k5DWEtbEUA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^17.0.38":
   version "17.0.38"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
   integrity sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==
@@ -1330,6 +1337,11 @@ ajv@^8.0.1:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
 
 anser@1.4.9:
   version "1.4.9"
@@ -3421,6 +3433,11 @@ graceful-fs@^4.2.4:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
+hamburger-react@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/hamburger-react/-/hamburger-react-2.4.1.tgz#44fac99c30720fe8ed098b2a33e919b14b3e007e"
+  integrity sha512-oqG9CrTVi8wM/dyQQh3JJOOfEiol9ChLOqwtjx+hFyRu0nYfe2ymNmzi2wtfQTDyExUdqETdyACZV9KZ9wpApA==
+
 handlebars@^4.7.6:
   version "4.7.7"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
@@ -4635,6 +4652,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+
 lodash.truncate@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
@@ -5501,6 +5523,15 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
+prop-types@^15.5.9:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
@@ -5589,6 +5620,14 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-animate-on-scroll@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-animate-on-scroll/-/react-animate-on-scroll-2.1.5.tgz#c35ff5b19452b23270c7a42329b8dc391f273020"
+  integrity sha1-w1/1sZRSsjJwx6QjKbjcOR8nMCA=
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.5.9"
+
 react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -5608,7 +5647,7 @@ react-is@17.0.2, "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-is@^16.8.1:
+react-is@^16.13.1, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
