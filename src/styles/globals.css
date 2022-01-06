@@ -40,6 +40,16 @@
       U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
       U+2215, U+FEFF, U+FFFD;
   }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
   .fade-in {
     -webkit-animation: fade-in 0.65s ease both;
@@ -278,19 +288,19 @@
 
   /* #region  /**=========== Typography =========== */
   h1 {
-    @apply font-bold font-primary text-2xl md:text-4xl;
+    @apply font-primary text-2xl font-bold md:text-4xl;
   }
 
   h2 {
-    @apply font-bold font-primary text-xl md:text-3xl;
+    @apply font-primary text-xl font-bold md:text-3xl;
   }
 
   h3 {
-    @apply font-bold font-primary text-lg md:text-2xl;
+    @apply font-primary text-lg font-bold md:text-2xl;
   }
 
   h4 {
-    @apply font-bold font-primary text-base md:text-lg;
+    @apply font-primary text-base font-bold md:text-lg;
   }
 
   body {

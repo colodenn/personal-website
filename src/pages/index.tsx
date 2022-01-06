@@ -14,7 +14,7 @@ import Seo from '@/components/Seo';
 export default function HomePage() {
   const [opened, setOpened] = React.useState(false);
   return (
-    <>
+    <div className='example'>
       <Seo templateTitle='Homepage' />
 
       <div className='fixed top-0 left-0 z-50 px-0 mx-auto w-full md:px-4 xl:px-48'>
@@ -360,6 +360,6 @@ export default function HomePage() {
           <Footer />
         </>
       )}
-    </>
+    </div>
   );
 }
