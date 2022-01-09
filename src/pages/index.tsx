@@ -222,7 +222,43 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
-
+            <section className='px-8 mx-auto mt-12 md:px-12 lg:px-28 lg:mt-24 2xl:px-64'>
+              <div>
+                <div className='flex mb-12'>
+                  <ScrollAnimation animateIn='fade-in slide-in-bottom'>
+                    <Link passHref={true} href='http://beerpong.codenn.de/'>
+                      <div
+                        className='p-6 mr-12 rounded-lg shadow-2xl cursor-pointer'
+                        style={{ backgroundColor: '#FFE6E9' }}
+                      >
+                        <img
+                          className='rounded-lg'
+                          src='https://i.imgur.com/JToQrSv.gif'
+                        />
+                      </div>
+                    </Link>
+                  </ScrollAnimation>
+                </div>
+                <div className=''>
+                  <h5 className='flex items-center text-2xl font-bold'>
+                    <img
+                      className='mr-4 w-8'
+                      src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/beer-mug_1f37a.png'
+                    />
+                    <Link href='http://beerpong.codenn.de/'>
+                      Beerpong Dashboard
+                    </Link>
+                  </h5>
+                  <p className='mt-4 text-2xl'>
+                    Track your beerpongs stats and compare them with your
+                    friends. Beer pong, also known as Beirut, is a drinking game
+                    in which players throw a ping pong ball across a table with
+                    the intent of landing the ball in a cup of beer on the other
+                    end.
+                  </p>
+                </div>
+              </div>
+            </section>
             <section className='px-8 mx-auto mt-12 md:px-12 lg:px-28 lg:mt-24 2xl:px-64'>
               <div>
                 <div className='flex mb-12'>
