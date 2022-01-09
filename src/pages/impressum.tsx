@@ -76,7 +76,7 @@ export default function Impressum() {
               </ul>
               <h3 className='mt-8 text-2xl'>Kontakt</h3>
               <ul className='mt-4 text-xl'>
-                <li>Telefon: +49 (0)176 82964398</li>
+                <li>Telefon: +49 (0)176 82964396</li>
                 <li>Email: cornelius@codenn.de</li>
               </ul>
 
