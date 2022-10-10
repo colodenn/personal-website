@@ -4,15 +4,6 @@
       "NODEJS_AWS_HANDLER_NAME": "handler"
     }
   },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "headers":[
-          { "key": "Access-Control-Allow-Credentials", "value": "true" },
-          { "key": "Access-Control-Allow-Origin", "value": "*" }
-        ]
-    }
-  ],
    "headers": [
     {
       "source": "/api/(.*)",
