@@ -1,15 +1,4 @@
 {
-  "headers": [
-    {
-      "source": "/fonts/inter-var-latin.woff2",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
   "build": {
     "env": {
       "NODEJS_AWS_HANDLER_NAME": "handler"
