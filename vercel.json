@@ -7,9 +7,10 @@
   "routes": [
     {
       "src": "/(.*)",
-      "headers": {
-        "Access-Control-Allow-Credentials": "true"
-      }
+      "headers":[
+          { "key": "Access-Control-Allow-Credentials", "value": "true" },
+          { "key": "Access-Control-Allow-Origin", "value": "*" }
+        ]
     }
   ]
 }
