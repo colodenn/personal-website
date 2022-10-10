@@ -10,4 +10,19 @@
       ]
     }
   ]
+  ,
+  "build": {
+    "env": {
+      "NODEJS_AWS_HANDLER_NAME": "handler"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Credentials": "true"
+      }
+    }
+  ]
+
 }
