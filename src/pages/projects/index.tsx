@@ -13,9 +13,7 @@ const Projects: NextPage = () => {
           <div className="mb-16">
             <h1 className="mb-8 text-5xl font-bold text-[#111111]">Projects</h1>
             <p className=" text-[#6c6c6c]">
-              From one page sites to the worlds first mobile sitebuilder,
-              I&apos;ve spent years designing and building products of varying
-              sizes. Here&apos;s a small selection of some of my recent projects
+              Here&apos;s a small selection of some of my recent projects
               and experiences.
             </p>
           </div>
