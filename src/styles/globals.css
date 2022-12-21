@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Domine:wght@400;500;600;700&display=swap');
+
+
+.gradient {
+    background: linear-gradient(to right, #E39600, #EA4C89, #8F48EB, #1DA1F2);
+}
+
+.divider {
+    background-image: url("../../public/divider.svg");   
+    height: 6px;
+    background-repeat: repeat-x;
+    background-position: left center;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+* {
+    @apply font-mono;
+}
+
+.card {
+    flex-basis: calc(33.33% - 16px);
+}
+
+.cards:hover > div > .card-body > h5 {
+    color: #8F48EB;
+}
+
+.cards:hover > div {
+    border-color: #d9d9d9;
+
+}
+
+.project-shadow {
+    box-shadow: inset 0px 0px 0px 1px rgb(17 17 17 / 6%);
+}
