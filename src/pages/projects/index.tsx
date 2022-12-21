@@ -73,7 +73,7 @@ const Projects: NextPage = () => {
             </h1>
             <p className=" text-[#6c6c6c]">
               Take a glimpse of my portfolio to get inspired for your next idea.
-              You'll find more coding projects on GitHub.
+              You&apos;ll find more coding projects on GitHub.
             </p>
             <Link className="mt-8" href={"https://github.com/colodenn"}>
               <div className="mt-8 flex items-center">
