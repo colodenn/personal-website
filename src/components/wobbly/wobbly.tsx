@@ -1,7 +1,7 @@
 // https://github.com/hey-nicolasklein/nico-so/blob/main/components/Wobbly/index.tsx
 import { animated, useSpring } from "@react-spring/web";
 import { useGesture } from "@use-gesture/react";
-import { ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 
 interface Props {
   children: ReactNode;

@@ -25,55 +25,39 @@ const Tools: NextPage = () => {
               Apps & services
             </h3>
             <p className="mt-4 text-[#6c6c6c]">
-              Some of the apps & services I use to get work done and keep track
-              of my personal life.
+              Some of the apps & services I use to get work done.
             </p>
             <div className="mt-12 grid w-full grid-cols-1  gap-4  lg:grid-cols-3 lg:gap-12">
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/vercel.png"
+                heading="Vercel"
+                text="Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration."
               />{" "}
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/supabase.png"
+                heading="Supabase"
+                text="Supabase is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, ..."
               />{" "}
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/nextjs.png"
+                heading="NextJS"
+                text="Production grade React applications that scale."
               />{" "}
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/github.png"
+                heading="GitHub"
+                text="GitHub, Inc is an Internet hosting service for software development and version control using Git."
               />{" "}
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/vscode.png"
+                heading="Visual Studio Code"
+                text="Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications."
               />{" "}
               <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
+                path="/tools/figma.png"
+                heading="Figma"
+                text="Design, prototype, and gather feedback all in one place with Figma."
               />{" "}
-              <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
-              />{" "}
-              <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
-              />{" "}
-              <SimpleCard
-                path="/oneplusnord.png"
-                heading="OnePlus Nord 5G"
-                text="blabla"
-              />
             </div>
           </div>
           <div className="mt-20">
@@ -83,9 +67,9 @@ const Tools: NextPage = () => {
             </p>
             <div className="mt-12 grid w-full grid-cols-1  gap-4  lg:grid-cols-3 lg:gap-12">
               <SimpleCard
-                path="/mateview.png"
+                path="/tools/mateview.png"
                 heading="Huawei MateView GT34"
-                text="blabla"
+                text="21:9, 34 inches"
               />{" "}
               <SimpleCard
                 path="/tools/bequiet.png"
@@ -95,12 +79,12 @@ const Tools: NextPage = () => {
               <SimpleCard
                 path="/tools/g402.png"
                 heading="Logitech G402"
-                text="blabla"
+                text="800 DPI"
               />{" "}
               <SimpleCard
                 path="/tools/keychron.png"
                 heading="Keychron k4 97%"
-                text="blabla"
+                text="MX Red switches"
               />
             </div>
           </div>
@@ -113,17 +97,17 @@ const Tools: NextPage = () => {
               <SimpleCard
                 path="/tools/oneplusnord.png"
                 heading="OnePlus Nord 5G"
-                text="blabla"
+                text="8GB RAM, 128GB Storage"
               />
               <SimpleCard
                 path="/tools/ankerp3.png"
                 heading="Soundcore Life P3"
-                text="blabla"
+                text="Noise Cancelling"
               />
               <SimpleCard
                 path="/tools/l380.png"
                 heading="Lenovo ThinkPad L380"
-                text="blabla"
+                text="Intel i5 8th gen, 8GB"
               />
             </div>
           </div>

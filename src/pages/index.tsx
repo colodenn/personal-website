@@ -6,58 +6,108 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
+import Zoomed from "@/components/zoomed/zoomed";
+
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="light">
       <Layout page="home">
         <Hero>
           <div className="mb-24">
-            <h1 className="mb-10 text-5xl font-semibold leading-snug tracking-wide text-[#111111] dark:text-[#ececec]">
+            <h1 className="mb-4 text-2xl font-semibold leading-snug tracking-wide text-[#111111] dark:text-[#ececec] lg:mb-10 lg:text-5xl">
               Software engineer and student creating thoughtful, intuitive
               interfaces.
             </h1>
-            <div className="mb-20 h-[450px] w-full overflow-hidden rounded-xl object-contain">
+            <div className="mb-8 h-full overflow-hidden  rounded-xl object-contain md:h-[450px] md:w-full lg:mb-12">
               <Image
-                alt="TODO"
-                className=" -translate-y-32 transform"
+                alt="Cornelius Denninger"
+                className=" transform lg:-translate-y-32"
                 height={300}
                 width={1000}
                 src={"/corno_face.jpg"}
               />
             </div>
             <p className="mb-8 text-lg leading-9 text-[#363636]">
-              I'm Cornelius, a {calcAge("03-01-2000")} years old Code enthusiast
-              from Germany. I am currently pursuing a Master of Science degree
-              in Business Informatics at{" "}
+              I&apos;m Cornelius, a {calcAge("03-01-2000")} years old Code
+              enthusiast from Germany. I am currently pursuing a Master of
+              Science degree in Business Informatics at{" "}
               <Link
-                href={"#TODO"}
-                className="border-b-[3px] border-[#d9d9d9]  hover:border-[#8153e2] hover:border-opacity-40 hover:text-purple-500"
+                href={"https://www.uni-saarland.de/start.html"}
+                className="border-b-[3px] border-[#d9d9d9]  hover:border-[1] hover:border-opacity-40 hover:text-purple-500"
               >
                 Saarland University
               </Link>{" "}
               and working part-time at{" "}
               <Link
-                href={"#TODO"}
+                href={"https://www.dfki.de/web"}
                 className="border-b-[3px] border-[#d9d9d9]  hover:border-[#8153e2] hover:border-opacity-40 hover:text-purple-500"
               >
-                German Research Center for Artificial
-              </Link>{" "}
-              Intelligence.
+                German Research Center for Artificial Intelligence
+              </Link>
+              .
             </p>
-            <p className="mb-8 text-lg leading-9 text-[#363636]">
-              I’m Dale-Anthony, a UK based product designer with over ten years
-              of experience. I specialise in interface design for mobile and
-              web-based applications with a focus on simplicity & usability. I’m
-              currently working at WP Engine where I design some of the worlds
-              best WordPress products including Advanced Custom Fields, WP
-              Migrate and WP Offload Media.
-            </p>
-            <p className="mb-8 text-lg leading-9 text-[#363636]">
-              Before WP Engine, I worked at BaseKit where I helped shape the
-              future of website builders and tools to help small businesses
-              thrive online. In my spare time also build tools like Design Vault
-              and Does.Design.
-            </p>
+            <div className="mt-12 flex items-center space-x-8">
+              <Link href="https://github.com/colodenn">
+                <Zoomed>
+                  <BsGithub size={24} color={"#363636"} />
+                </Zoomed>
+              </Link>
+              <Link href="https://www.linkedin.com/in/cornelius-denninger-98454b169/">
+                <Zoomed>
+                  <BsLinkedin size={24} color={"#363636"} />
+                </Zoomed>
+              </Link>
+              <Link href="https://twitter.com/colodenn">
+                <Zoomed>
+                  <BsTwitter size={24} color={"#363636"} />
+                </Zoomed>
+              </Link>
+              <Zoomed>
+                <Link
+                  href={"mailto:cornelius.denninger@gmail.com"}
+                  className="rounded-full border-[1px] border-gray-300 bg-[#e6e5e5] py-2 px-4 text-sm font-bold"
+                >
+                  Email me
+                </Link>
+              </Zoomed>
+            </div>
+          </div>
+          <hr className="divider" />
+          <div className="mt-24 mb-24">
+            <div>
+              <h3 className="mb-8 text-2xl font-bold text-[#111111]">Work</h3>
+              <div className="mb-6 w-full">
+                <div className="items-center justify-between lg:flex">
+                  <div>
+                    <h3 className="cursor-pointer font-semibold hover:text-[#8153e2]">
+                      Freelancer
+                    </h3>
+                  </div>
+                  <div>
+                    <p className="text-light flex justify-between text-[#6c6c6c]">
+                      <span className=" md:mr-8">Software Engineer</span> 2022 -
+                      Today
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full">
+                <div className="items-center justify-between lg:flex">
+                  <div>
+                    <h3 className="cursor-pointer font-semibold hover:text-[#8153e2]">
+                      German Research Center for Artificial Intelligence
+                    </h3>
+                  </div>
+                  <div>
+                    <p className="text-light flex justify-between text-[#6c6c6c]">
+                      <span className=" md:mr-8">Research Assistant</span> 2019
+                      - Today
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <hr className="divider" />
           <div className="mt-24">
@@ -69,9 +119,17 @@ const Home: NextPage = () => {
             </p>
 
             <div className="mt-12 w-full">
-              <SimpleCard />
+              <SimpleCard
+                path="/beerpong_logo.jpg"
+                text="Track your beerpongs stats and compare them with your friends. Beer pong, also known as Beirut, is a drinking game in which players throw a ping pong ball across a table with the intent of landing the ball in a cup of beer on the other end."
+                heading="Beerpong Dashboard"
+              />
               <div className="mt-6"></div>
-              <SimpleCard />
+              <SimpleCard
+                path="/ertappen.png"
+                heading="Ertappen."
+                text="We provide your images with a unique watermark that is invisible to the naked eye. Want to track down the counterfeiter of your images?"
+              />
             </div>
           </div>
         </Hero>
@@ -82,39 +140,38 @@ const Home: NextPage = () => {
 
 export default Home;
 
-export const SimpleCard = () => {
+export const SimpleCard = (props: {
+  path: string;
+  heading: string;
+  text: string;
+}) => {
   return (
     <Link href="#">
-      <div className="w-full rounded-lg border-[1px] border-gray-200 bg-[#F7F7F7] p-8 hover:border-[#d9d9d9]">
-        <div className="flex justify-between space-x-8">
-          <div className="relative w-72">
+      <div className="w-full rounded-lg border-[1px] border-gray-200 bg-[#F7F7F7] p-4 hover:border-[#d9d9d9] lg:p-8">
+        <div className="lg:flex  lg:space-x-8">
+          <div className="relative mb-6 h-24 w-24  shrink-0 object-contain lg:mb-0 lg:block lg:h-24 ">
             <Image
-              className="absolute z-50 rounded-lg  "
-              src={"/beerpong_logo.jpg"}
-              alt="TODO"
-              width={250}
-              height={250}
+              className="absolute z-50  rounded-lg "
+              src={props.path}
+              alt={props.heading}
+              width={96}
+              height={96}
             />
             <div className="absolute top-0 z-20">
               <Image
                 className="rounded-lg opacity-50 blur-md"
-                src={"/beerpong_logo.jpg"}
+                src={props.path}
                 alt="TODO"
-                width={250}
-                height={250}
+                width={96}
+                height={96}
               />
             </div>
           </div>
           <div>
             <h5 className="mb-4 text-lg font-bold text-[#242424]">
-              Beerpong Dashboard
+              {props.heading}
             </h5>
-            <p className="text-[#6c6c6c]">
-              Track your beerpongs stats and compare them with your friends.
-              Beer pong, also known as Beirut, is a drinking game in which
-              players throw a ping pong ball across a table with the intent of
-              landing the ball in a cup of beer on the other end.
-            </p>
+            <p className="text-[#6c6c6c]">{props.text}</p>
           </div>
         </div>
       </div>

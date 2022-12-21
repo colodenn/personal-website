@@ -15,7 +15,7 @@ export const Layout = (props: { children?: React.ReactNode; page: string }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen bg-white py-24 dark:bg-[#111111]">
+      <main className=" min-h-screen overflow-hidden bg-white dark:bg-[#111111] ">
         <div className="fixed top-0 z-50 w-full">
           <div className="mb-1">
             <Rainbow />
@@ -28,7 +28,7 @@ export const Layout = (props: { children?: React.ReactNode; page: string }) => {
           transition={{ duration: 0.2 }}
           exit={{ opacity: 0 }}
           layoutId="page"
-          className="mt-24 "
+          className="mt-24 py-8 px-2 lg:py-24 "
         >
           {props.children}
         </motion.div>

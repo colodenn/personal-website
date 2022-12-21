@@ -1,7 +1,7 @@
 // https://github.com/hey-nicolasklein/nico-so/blob/main/components/Zoomed/index.tsx
 import { animated, useSpring } from "@react-spring/web";
 import { useGesture } from "@use-gesture/react";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode } from "react";
 
 const Zoomed = (props: {
   children: ReactNode;
