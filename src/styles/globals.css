@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Inter";
+    src: url('/Inter.ttf') format("truetype");
+}
+
+@font-face {
     font-family: "Roxborough";
     src: url("/Roxborough.ttf") format("truetype");
 }

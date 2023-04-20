@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'roxborough': ["Roxborough"]
+        'roxborough': ["Roxborough"],
+        'inter': ['Inter'],
       }
     },
   },
