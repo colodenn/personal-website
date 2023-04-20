@@ -73,10 +73,10 @@ const Home: NextPage = () => {
               <HoverLink text="LinkedIn" link='#' />
             </li>
             <li>
-              <HoverLink text="Twitter" link='#'  />
+              <HoverLink text="Twitter" link='https://twitter.com/colodenn'  />
             </li>
             <li>
-              <HoverLink text="GitHub" link='#'  />
+              <HoverLink text="GitHub" link='https://github.com/colodenn'  />
             </li>
           </ol>
         </div>
@@ -86,10 +86,10 @@ const Home: NextPage = () => {
           </div>
           <ol className="space-y-1">
             <li>
-              <HoverLink text="GitHub" link='#'  />
+              <HoverLink text="GitHub" link='https://github.com/colodenn'  />
             </li>
             <li>
-              <HoverLink text="Resumee" link='#' />
+              <HoverLink text="Resumee" link='https://codenn.de' />
             </li>
           </ol>
         </div>
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
           </div>
           <ol className="space-y-1">
             <li>
-              <HoverLink text="cornelius.denninger@gmail.com" link='#' />
+              <HoverLink text="cornelius.denninger@gmail.com" link='mailto:cornelius.denninger@gmail.com' />
             </li>
          
           </ol>
