@@ -3,8 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { clsx } from "clsx";
+import { QuoteIcon } from "@radix-ui/react-icons";
 
 const Home: NextPage = () => {
   return (
@@ -15,22 +16,36 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-screen w-screen overflow-hidden bg-[#ebebeb]  py-12">
-        <Header />
+        <div className="px-12">
+          <Header />
+        </div>
         <div className="my-24">
-          <h1 className="text-center font-roxborough text-9xl">
-            Cornelius <span className="">Denninger</span>
+          <h1 className="text-center font-roxborough text-[10vw] tracking-tight">
+            Cornelius Denninger
           </h1>
+          <p className="text-center text-5xl font-light">
+            Software engineer and student creating thoughtful, intuitive
+            interfaces.
+          </p>
         </div>
         <Menu />
-        <div className="flex  items-center justify-between">
-          <div className="flex w-full justify-center text-center">
-            <p>Lorem impsim asfkasd lapslfe msacmoe xgflawe dfjaweo</p>
+        <div className="absolute  bottom-6 flex w-full items-center justify-around ">
+          <div className="text-md items-cennter flex w-96 flex-col justify-center text-center font-medium ">
+            <QuoteIcon className="mx-auto mb-4 h-8 w-8" />
+            <p className=" tracking-tight">
+              HUY PHAN (HE/HIM) AKA HUYML IS AN INDEPENDENT DESIGNER FROM HO CHI
+              MINH CITY, VIETNAM
+            </p>
           </div>
-          <div className="my-24 flex w-full justify-center">
+          <div className="my-24 flex justify-center">
             <Image src={"/person.png"} alt="Person" height={200} width={200} />
           </div>
-          <div className="flex w-full justify-center text-center">
-            <p>Lorem impsim asfkasd lapslfe msacmoe xgflawe dfjaweo</p>
+          <div className="text-md flex w-96 flex-col justify-center text-center font-medium">
+            <QuoteIcon className="mx-auto mb-4 h-8 w-8" />
+            <p className="font-medium tracking-tight">
+              HUY PHAN (HE/HIM) AKA HUYML IS AN INDEPENDENT DESIGNER FROM HO CHI
+              MINH CITY, VIETNAM
+            </p>
           </div>
         </div>
       </main>
@@ -38,16 +53,16 @@ const Home: NextPage = () => {
   );
 };
 
-const Header = () => {
+export const Header = () => {
   return (
     <>
-      <div className="flex justify-between px-12">
+      <div className="flex justify-between px-0">
         <div className="flex w-full justify-start">
-          <div className="flex  items-center justify-between space-x-2">
+          <div className="flex  items-center justify-between space-x-4">
             <div className="h-max overflow-hidden">
               <Image src={"/logo.svg"} width={30} height={30} alt="logo" />
             </div>
-            <div className="  flex flex-col text-xs font-medium leading-tight">
+            <div className="flex  flex-col font-inter text-sm font-medium leading-tight">
               <span className="">Open for any</span>
 
               <span className="">collaborations and offers</span>
@@ -55,18 +70,16 @@ const Header = () => {
           </div>
         </div>
         <div className="flex w-full justify-center">
-          <h1 className="font-inter text-xl  font-bold">
+          <h1 className="font-inter text-3xl font-bold tracking-tight text-[#2C2C2C]">
             <Link className=" " href={"#"}>
               CODENN.
             </Link>
           </h1>
         </div>
         <div className="flex w-full justify-end">
-          <div className="flex flex-col text-xs font-medium">
+          <div className="flex flex-col text-start font-inter text-sm font-medium">
             <span>Portfolio</span>
-            <span className="flex justify-end">
-              Vol.1 <span>-</span>
-            </span>
+            <span className="flex justify-start">Vol.1</span>
           </div>
         </div>
       </div>
@@ -74,12 +87,29 @@ const Header = () => {
   );
 };
 
-const Menu = () => {
+export const FirstLetterChanged = ({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) => {
+  return (
+    <AnimatePresence>
+      <div className={clsx(className, "flex")}>
+        <span className="font-roxborough">{text[0]}</span>
+        <span className="flex font-inter">{text.slice(1 - text.length)}</span>
+      </div>
+    </AnimatePresence>
+  );
+};
+
+export const Menu = () => {
   const [visible, setVisible] = useState(false);
   const [hoveredText, setHoveredText] = useState("Work");
   return (
     <>
-      <div className="relative">
+      <div className="absolute left-0 mt-12 w-full">
         <div className="relative z-50 flex items-center justify-between px-12 text-xs">
           <div
             className="cursor-pointer"
@@ -110,7 +140,7 @@ const Menu = () => {
             <p className=" font-medium text-[#878787]">02</p>
             <p
               className={clsx(
-                "font-medium   mix-blend-difference  ",
+                "font-medium mix-blend-difference",
                 visible && " invert filter transition-colors duration-700"
               )}
             >
@@ -135,7 +165,8 @@ const Menu = () => {
               Playground
             </p>
           </div>
-          <div
+          <Link
+            href="/contact"
             className="cursor-pointer"
             onMouseEnter={() => {
               setVisible(true);
@@ -152,7 +183,7 @@ const Menu = () => {
             >
               Contact
             </p>
-          </div>
+          </Link>
           <div
             className="cursor-pointer"
             onMouseEnter={() => {
@@ -176,11 +207,13 @@ const Menu = () => {
             <motion.div
               className="absolute top-1/2  flex  w-full -translate-y-1/2 items-center justify-center overflow-hidden bg-black text-white  "
               initial={{ height: "0rem" }}
-              animate={{ height: "9rem" }}
+              animate={{ height: "13rem" }}
               exit={{ height: "0rem" }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-center text-9xl ">{hoveredText}</h1>
+              <h1 className="text-center text-[10vw] ">
+                <FirstLetterChanged className="" text={hoveredText} />
+              </h1>
             </motion.div>
           )}
         </AnimatePresence>
