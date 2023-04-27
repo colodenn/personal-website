@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { m, motion } from "framer-motion";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { FirstLetterChanged, Header, Menu } from ".";
+import { FirstLetterChanged, Header } from ".";
+import { Menu } from "~/components/Menu/Menu";
 const hoverEffect = {
   rest: {
     scaleX: "0",

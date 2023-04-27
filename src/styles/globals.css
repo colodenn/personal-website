@@ -17,3 +17,8 @@
     font-family: "Roxborough";
     src: url("/Roxborough.ttf") format("truetype");
 }
+
+.menu_link:hover  .MenuBackgroundText {
+        color: green;
+        background-color: red;
+    }

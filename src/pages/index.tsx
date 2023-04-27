@@ -6,7 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FC, useState } from "react";
 import { clsx } from "clsx";
 import { QuoteIcon } from "@radix-ui/react-icons";
-
+import { Menu } from "~/components/Menu/Menu";
+import { Rotate3D } from "~/components/Animations/Rotate3D";
 const Home: NextPage = () => {
   return (
     <>
@@ -87,6 +88,22 @@ export const Header = () => {
   );
 };
 
+const flyIn = {
+  rest: {
+    opacity: 0,
+    transform: "translateY(100%)",
+  },
+  animate: {
+    opacity: 1,
+    transform: "translateY(0%)",
+
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
+
 export const FirstLetterChanged = ({
   text,
   className,
@@ -95,131 +112,46 @@ export const FirstLetterChanged = ({
   className?: string;
 }) => {
   return (
-    <AnimatePresence>
-      <div className={clsx(className, "flex")}>
-        <span className="font-roxborough">{text[0]}</span>
-        <span className="flex font-inter">{text.slice(1 - text.length)}</span>
-      </div>
-    </AnimatePresence>
+    <div className="MenuBackgroundText">
+      {text.split("").map((letter, index) => {
+        return <span key={index}>{letter}</span>;
+      })}
+    </div>
+    // <AnimatePresence>
+    //   {text && (
+    //     <motion.div
+    //       variants={{
+    //         animate: {
+    //           transition: {
+    //             staggerChildren: 0.02,
+    //             staggerDirection: 1,
+    //           },
+    //         },
+    //         rest: {
+    //           transition: {
+    //             staggerDirection: -1,
+    //           },
+    //         },
+    //       }}
+    //       animate="animate"
+    //       initial="rest"
+    //       exit={"rest"}
+    //       className={clsx(className, " flex ")}
+    //     >
+    //       {text.split("").map((letter, index) => {
+    //         return (
+    //           <motion.span
+    //             key={index + 1}
+    //             variants={flyIn}
+    //             className="flex font-inter first:font-roxborough"
+    //           >
+    //             {letter}
+    //           </motion.span>
+    //         );
+    //       })}
+    //     </motion.div>
+    //   )}
+    // </AnimatePresence>
   );
 };
-
-export const Menu = () => {
-  const [visible, setVisible] = useState(false);
-  const [hoveredText, setHoveredText] = useState("Work");
-  return (
-    <>
-      <div className="absolute left-0 mt-12 w-full">
-        <div className="relative z-50 flex items-center justify-between px-12 text-xs">
-          <div
-            className="cursor-pointer"
-            onMouseEnter={() => {
-              setVisible(true);
-              setHoveredText("Work");
-            }}
-            onMouseLeave={() => setVisible(false)}
-          >
-            <p className=" font-medium text-[#878787]">01</p>
-            <p
-              className={clsx(
-                "font-medium   mix-blend-difference  ",
-                visible && " invert filter transition-colors duration-700"
-              )}
-            >
-              Work
-            </p>
-          </div>
-          <div
-            className="cursor-pointer"
-            onMouseEnter={() => {
-              setVisible(true);
-              setHoveredText("About");
-            }}
-            onMouseLeave={() => setVisible(false)}
-          >
-            <p className=" font-medium text-[#878787]">02</p>
-            <p
-              className={clsx(
-                "font-medium mix-blend-difference",
-                visible && " invert filter transition-colors duration-700"
-              )}
-            >
-              About
-            </p>
-          </div>
-          <div
-            className="cursor-pointer"
-            onMouseEnter={() => {
-              setVisible(true);
-              setHoveredText("Playground");
-            }}
-            onMouseLeave={() => setVisible(false)}
-          >
-            <p className=" font-medium text-[#878787]">03</p>
-            <p
-              className={clsx(
-                "font-medium   mix-blend-difference  ",
-                visible && " invert filter transition-colors duration-700"
-              )}
-            >
-              Playground
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="cursor-pointer"
-            onMouseEnter={() => {
-              setVisible(true);
-              setHoveredText("Contact");
-            }}
-            onMouseLeave={() => setVisible(false)}
-          >
-            <p className=" font-medium text-[#878787]">04</p>
-            <p
-              className={clsx(
-                "font-medium   mix-blend-difference  ",
-                visible && " invert filter transition-colors duration-700"
-              )}
-            >
-              Contact
-            </p>
-          </Link>
-          <div
-            className="cursor-pointer"
-            onMouseEnter={() => {
-              setVisible(true);
-              setHoveredText("©2023");
-            }}
-            onMouseLeave={() => setVisible(false)}
-          >
-            <p
-              className={clsx(
-                "font-medium   mix-blend-difference  ",
-                visible && " invert filter transition-colors duration-700"
-              )}
-            >
-              ©2023
-            </p>
-          </div>
-        </div>
-        <AnimatePresence>
-          {visible && (
-            <motion.div
-              className="absolute top-1/2  flex  w-full -translate-y-1/2 items-center justify-center overflow-hidden bg-black text-white  "
-              initial={{ height: "0rem" }}
-              animate={{ height: "13rem" }}
-              exit={{ height: "0rem" }}
-              transition={{ duration: 0.5 }}
-            >
-              <h1 className="text-center text-[10vw] ">
-                <FirstLetterChanged className="" text={hoveredText} />
-              </h1>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </>
-  );
-};
-
 export default Home;

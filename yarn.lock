@@ -280,6 +280,11 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
 
+"@types/splitting@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/splitting/-/splitting-1.0.1.tgz#63277af1508c7090480db0de56fcea4ffdd4e05a"
+  integrity sha512-YE4KTZpJbDDUm0jCpx9YGlAxk6ksh/LffSTNKkiKb7xEUfW2biyGWHF7ScgT5H+HfLS2yb1VAGARYeRHcFDYXA==
+
 "@typescript-eslint/eslint-plugin@^5.56.0":
   version "5.58.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.58.0.tgz#b1d4b0ad20243269d020ef9bbb036a40b0849829"
@@ -2212,6 +2217,11 @@ source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+splitting@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/splitting/-/splitting-1.0.6.tgz#9197b3fd600c5b56038fc06ae8b9f5933d392875"
+  integrity sha512-2hYicS/hTy1MgjTi4ST6B298uoLSx854VfTf0FeMmCeE6OiZjEixTOGPLqnNzSaM/y3jwoEYj5pmDzYFwRInPw==
 
 stop-iteration-iterator@^1.0.0:
   version "1.0.0"
